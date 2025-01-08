@@ -32,8 +32,8 @@
             },
             tmove: function(e){
                 let touchobj = e.changedTouches[0];
-                let x = pareInt(touchobj.clientX);
-                let y = pareInt(touchobj.clientY);
+                let x = parseInt(touchobj.clientX);
+                let y = parseInt(touchobj.clientY);
                 let ex = x - 100; //값이 커서 줄여줌
                 let ey = y - 100;
                 box.innerHTML = "박스를 만지고 있군요"
